@@ -1,8 +1,7 @@
-import Button from 'components/Button'
-import Typography from 'components/typography'
-import {} from 'react'
-import useMediaQuery from '@mui/material/useMediaQuery'
 import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import Typography from 'components/typography'
+import { } from 'react'
 
 type Props = {
   headerEl: string
@@ -14,7 +13,7 @@ type Props = {
 }
 
 const Card = (props: Props) => {
-  const { headerEl, title, desc, buttonEl, onClick, className } = props
+  const { headerEl, title, desc, buttonEl, className } = props
   const theme = useTheme()
   const matches = useMediaQuery(theme.breakpoints.down('sm'))
 

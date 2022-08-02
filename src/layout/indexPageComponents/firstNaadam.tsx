@@ -1,11 +1,7 @@
-import { Typography } from 'components'
-import { useTheme } from '@mui/material/styles'
-import useMediaQuery from '@mui/material/useMediaQuery'
-import { useEffect, useRef, useState } from 'react'
-import { useDimensions } from 'hooks'
 import Emphasis from 'components/ligature/emphasis'
 import { PADDINGX } from 'constants/layout'
 import { motion } from 'framer-motion'
+import { useEffect, useRef, useState } from 'react'
 
 const item = {
   hidden: {
@@ -25,8 +21,6 @@ const item = {
 const NaadamFirst = (props) => {
   const { btext, loc, location, title, bgPicture, locationPicture} = props
 
-  const theme = useTheme()
-  const matches = useMediaQuery(theme.breakpoints.down('sm'))
   const [height, setHeight] = useState(0)
   const imageRef = useRef<HTMLImageElement>(null)
 

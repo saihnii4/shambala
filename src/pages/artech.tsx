@@ -1,4 +1,4 @@
-import {} from 'react'
+import * as React from 'react'
 import { MainLayout } from 'layout'
 import { Modd, Arttech } from 'components'
 import { Easy } from 'components/telmun/arttecheasy'

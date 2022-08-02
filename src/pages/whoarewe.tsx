@@ -1,4 +1,4 @@
-import { GoalCard, MemberCard, Typography } from 'components'
+import { MemberCard, Typography } from 'components'
 import { Emphasis } from 'components/ligature/index'
 import { MainLayout } from 'layout'
 import { members } from '../../public/assets/membersInfo'

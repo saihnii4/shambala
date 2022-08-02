@@ -1,15 +1,9 @@
-import { useTheme } from '@mui/material/styles'
-import useMediaQuery from '@mui/material/useMediaQuery'
 import { useEffect, useRef, useState } from 'react'
 import { MainLayout } from 'layout'
 import { Yellow } from 'components'
 import { handleIcon } from 'utils'
 import { PADDINGX } from 'constants/layout'
 import { motion } from 'framer-motion'
-
-import Content from "../../public/assets/data.js"
-
-const data = Content.recomended
 
 const FirstPart = () => {
   const data = {
@@ -50,8 +44,6 @@ const FirstPart = () => {
       y: 0,
     },
   }
-  const theme = useTheme()
-  const matches = useMediaQuery(theme.breakpoints.down('sm'))
   const [height, setHeight] = useState(0)
   const imageRef = useRef<HTMLImageElement>(null)
 

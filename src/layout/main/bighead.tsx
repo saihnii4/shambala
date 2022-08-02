@@ -1,12 +1,11 @@
-import { useEffect, useRef } from 'react'
-import React, { useState } from 'react'
+import { Drawer } from '@mui/material'
 import { Typography } from 'components'
-import { handleIcon } from 'utils'
-import { PADDINGX } from 'constants/layout'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Drawer, Button, SwipeableDrawer } from '@mui/material'
+import React from 'react'
+import { handleIcon } from 'utils'
 import { SustainGoals } from './sustainGoals'
+
 const data = {
   tablet: [
     { link: '/whoarewe', name: 'Who are we' },
@@ -56,12 +55,12 @@ export const Bighead = () => {
     setState({ ...state, [anchor]: open })
   }
 
-  const list = (anchor) => (
+  const List = () => (
     <div className="w-96 h-full bg-mainBg flex flex-col z-50">
-      {data.tablet.map((el) => {
+      {data.tablet.map((el, i) => {
         const selected = router.pathname == el.link
         return (
-          <Link href={el.link}>
+          <Link key={i} href={el.link} passHref>
             <div
               style={{
                 background:
@@ -122,17 +121,16 @@ export const Bighead = () => {
             </div>
 
             <Drawer anchor={'right'} open={state['right']} onClose={toggleDrawer('right', false)}>
-              {list('right')}
+              <List />
             </Drawer>
           </React.Fragment>
         </div>
         <div className="items-center justify-between h-full headerBpoint:flex hidden gap-14">
           <div className="h-full shrink-0 flex items-center">
-            {data.nav.map((el) => {
-              const sele = router.pathname == el.link
+            {data.nav.map((el, i) => {
               return (
-                <div className="h-full">
-                  <Link href={el.link == '/whatarewedoing' ? router.pathname : el.link}>
+                <div className="h-full" key={i}>
+                  <Link href={el.link == '/whatarewedoing' ? router.pathname : el.link} passHref>
                     <div
                       key={'deez' + el.name}
                       id={el.name}
@@ -198,9 +196,9 @@ export const Bighead = () => {
             })}
           </div>
           <div id="icons" className="flex gap-[30px]">
-            {data.icons.map((el) => {
+            {data.icons.map((el, i) => {
               return (
-                <Link href={el.link}>
+                <Link key={i} href={el.link} passHref>
                   <a className="hover:scale-125" target="_blank">
                     {handleIcon({
                       icon: el.icon,

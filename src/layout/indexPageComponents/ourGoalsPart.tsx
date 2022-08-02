@@ -1,7 +1,6 @@
-import { Typography } from 'components'
 import { Emphasis, GoalCard } from 'components'
-import { animate, motion } from 'framer-motion'
 import { PADDINGX } from 'constants/layout'
+import { motion } from 'framer-motion'
 
 const OurGoalsPart = () => {
   const container = {
@@ -46,7 +45,9 @@ const OurGoalsPart = () => {
         <div className="grid md:gap-[157px] gap-[42px]">
           <motion.div variants={item}>
             <div className="text-center">
-              <Emphasis children="Our Goals" left={true} />
+              <Emphasis left={true}>
+                Our Goals
+              </Emphasis>
             </div>
           </motion.div>
           <motion.div variants={item}>

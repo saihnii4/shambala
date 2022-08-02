@@ -21,7 +21,7 @@ const variants = {
 
 const MenuItem = ({ name, isSelected, path }) => {
   return (
-    <Link href={path}>
+    <Link href={path} passHref>
       <motion.li
         variants={variants}
         whileTap={{ scale: 0.95 }}

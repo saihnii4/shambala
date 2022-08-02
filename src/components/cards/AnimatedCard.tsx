@@ -1,7 +1,6 @@
-import * as React from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import Image from 'next/image'
-import Typography from 'components/typography'
+import * as React from 'react'
 
 type Props = {
   pictureURL: string

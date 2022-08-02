@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import { IgmSecondPart, OurPlanetFirst, OurPlanetSecond, IGMLAB, Incubator, Wpic, Ecard } from 'components'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
-import { title } from 'process'
 import Content from "../../public/assets/data.js"
 
 
@@ -28,6 +27,7 @@ const WhatWeDoing = () => {
       y: 0,
     },
   }
+
   return (
     <MainLayout classname={`bg-backgroundColor-darkGray flex flex-col items-center`}>
       <div className={`${PADDINGX}`} id="FirstPart">

@@ -1,10 +1,10 @@
-import Typography from "components/typography";
+// what purpose does this component serve?
 
-type Props = {
-    'title': string,
-    'description': string,
+// type Props = {
+//     'title': string,
+//     'description': string,
+// }
 
-}
 const YellowText = () => {
 
 }

@@ -58,8 +58,8 @@ const OurPlanetSecond = (props) => {
               y2="515.945"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#2A2C2C" />
-              <stop offset="1" stop-color="#2A2C2C" stop-opacity="0" />
+              <stop stopColor="#2A2C2C" />
+              <stop offset="1" stopColor="#2A2C2C" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
@@ -82,9 +82,9 @@ const OurPlanetSecond = (props) => {
               width="64"
               height="64"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -119,9 +119,9 @@ const OurPlanetSecond = (props) => {
               width="50"
               height="50"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -155,8 +155,8 @@ const OurPlanetSecond = (props) => {
               y2="224.607"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#2A2C2C" />
-              <stop offset="1" stop-color="#2A2C2C" stop-opacity="0" />
+              <stop stopColor="#2A2C2C" />
+              <stop offset="1" stopColor="#2A2C2C" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
@@ -179,9 +179,9 @@ const OurPlanetSecond = (props) => {
               width="50"
               height="50"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -216,9 +216,9 @@ const OurPlanetSecond = (props) => {
               width="46"
               height="46"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -275,8 +275,8 @@ const OurPlanetSecond = (props) => {
             whileInView={'visible'}
             className={`grid grid-rows-3 gap-4 sm:gap-16 z-40 ${PADDINGX} max-w-shambWidth`}
           >
-            {ourPlanetSecond.goals.map((el) => {
-              return <GoalCard index={el.index} desc={matches ? `${el.textMobile}` : `${el.textDesktop}`} />
+            {ourPlanetSecond.goals.map((el, i: number) => {
+              return <GoalCard index={el.index} desc={matches ? `${el.textMobile}` : `${el.textDesktop}`} key={i} />
             })}
           </motion.div>
         </div>

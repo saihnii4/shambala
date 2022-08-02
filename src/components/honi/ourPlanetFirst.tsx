@@ -41,9 +41,9 @@ const OurPlanetFirst = (props) => {
                 width="64"
                 height="64"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
                   type="matrix"
@@ -73,9 +73,9 @@ const OurPlanetFirst = (props) => {
                 width="64"
                 height="64"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
                   type="matrix"
@@ -105,9 +105,9 @@ const OurPlanetFirst = (props) => {
                 width="50"
                 height="50"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
                   type="matrix"
@@ -137,9 +137,9 @@ const OurPlanetFirst = (props) => {
                 width="46"
                 height="46"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
                   type="matrix"
@@ -168,8 +168,8 @@ const OurPlanetFirst = (props) => {
                 y2="472"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#2A2C2C" />
-                <stop offset="1" stop-color="#2A2C2C" stop-opacity="0" />
+                <stop stopColor="#2A2C2C" />
+                <stop offset="1" stopColor="#2A2C2C" stopOpacity="0" />
               </linearGradient>
             </defs>
           </svg>
@@ -186,8 +186,8 @@ const OurPlanetFirst = (props) => {
                 y2="472"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#2A2C2C" />
-                <stop offset="1" stop-color="#2A2C2C" stop-opacity="0" />
+                <stop stopColor="#2A2C2C" />
+                <stop offset="1" stopColor="#2A2C2C" stopOpacity="0" />
               </linearGradient>
             </defs>
           </svg>
@@ -204,8 +204,8 @@ const OurPlanetFirst = (props) => {
                 y2="224.607"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#2A2C2C" />
-                <stop offset="1" stop-color="#2A2C2C" stop-opacity="0" />
+                <stop stopColor="#2A2C2C" />
+                <stop offset="1" stopColor="#2A2C2C" stopOpacity="0" />
               </linearGradient>
             </defs>
           </svg>
@@ -222,8 +222,8 @@ const OurPlanetFirst = (props) => {
                 y2="224.607"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#2A2C2C" />
-                <stop offset="1" stop-color="#2A2C2C" stop-opacity="0" />
+                <stop stopColor="#2A2C2C" />
+                <stop offset="1" stopColor="#2A2C2C" stopOpacity="0" />
               </linearGradient>
             </defs>
           </svg>
